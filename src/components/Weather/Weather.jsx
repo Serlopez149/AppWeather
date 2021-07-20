@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography'
 import { IconContext } from 'react-icons'
 import IconState, { validValues } from './../IconState'
 
-const Weather = ({ temperature, state }) => {
+const Weather = ({ temperature, state, hola }) => {
     return (
         <Grid container item
             direction="row"
