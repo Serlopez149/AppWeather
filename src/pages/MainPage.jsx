@@ -6,10 +6,10 @@ import CityList from './../components/CityList/CityList'
 
 
 const cities = [
-    {city:"Buenos Aires", country:"Argentina"},
-    {city:"Bogota", country:"Colombia"},
-    {city:"Caracas", country:"Venezuela"},
-    {city:"Santiago", country:"Chile"},
+    {city:"Buenos Aires", country:"Argentina", countryCode: "AR"},
+    {city:"Bogota", country:"Colombia", countryCode:"CO"},
+    {city:"Caracas", country:"Venezuela", countryCode:"VE"},
+    {city:"Santiago", country:"Chile", countryCode:"CL"},
 ]
 
 const MainPage = () => {
