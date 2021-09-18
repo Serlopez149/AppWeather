@@ -12,18 +12,18 @@ const ForecastItem = ({ weekDay, hour, state, temperature}) => {
             direction="column"
             justify="center"
             alignItems="center">
-            <Grid Item>
+            <Grid item>
                 <Typography>{weekDay}</Typography>
             </Grid>
-            <Grid Item>
+            <Grid item>
                 <Typography>{hour}</Typography>
             </Grid>
-            <Grid Item>
+            <Grid item>
                 <IconContext.Provider value={{ size:'5em' }}>
                     <IconState state={state} />
                 </IconContext.Provider> 
             </Grid>
-            <Grid Item>
+            <Grid item>
                 <Typography>{temperature}°</Typography>
             </Grid>
 
@@ -36,7 +36,7 @@ const ForecastItem = ({ weekDay, hour, state, temperature}) => {
 ForecastItem.propTypes = {
     weekDay: PropTypes.string.isRequired,
     hour: PropTypes.number.isRequired, 
-    state: PropTypes.oneOf([validValues]).isRequired, 
+    state: PropTypes.oneOf(validValues).isRequired, 
     temperature: PropTypes.number.isRequired,
 }
 

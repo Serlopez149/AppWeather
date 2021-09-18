@@ -11,10 +11,10 @@ const renderForescastItem = forecast => {
             data-testid="forecast-item-container" 
             item key={`${weekDay}${hour}`}>
             <ForecastItem 
-                temperature={temperature}
                 hour={hour}
                 weekDay={weekDay}
                 state={state}
+                temperature={temperature}
             ></ForecastItem>
         </Grid>
     )
@@ -39,7 +39,7 @@ Forecast.propTypes = {
     forecastItemList: PropTypes.arrayOf(PropTypes.shape({
         weekDay: PropTypes.string.isRequired,
         hour: PropTypes.number.isRequired, 
-        state: PropTypes.oneOf([validValues]).isRequired, 
+        state: PropTypes.oneOf(validValues).isRequired, 
         temperature: PropTypes.number.isRequired,
     })).isRequired
 }
